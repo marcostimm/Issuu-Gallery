@@ -1,0 +1,23 @@
+<!DOCTYPE html> 
+<html lang="pt-br"> 
+	<head> 
+		<title>JQuery Issuu Gallery Plugin</title> 
+		<meta charset="utf-8"> 
+		<script type="text/javascript" src="js/jquery-1.6.3.min.js"></script> 
+		<script type="text/javascript" src="js/issuuGallery/jquery.issuu.gallery.min.js"></script>
+		<script type="text/javascript" src="js/colorbox/colorbox/jquery.colorbox-min.js"></script>
+		<link rel="stylesheet" type="text/css" href="js/issuuGallery/css/style.css" />
+		<link rel="stylesheet" type="text/css" href="js/colorbox/example1/colorbox.css" />
+		<script type="text/javascript"> 
+			$(function() {
+				$('#gallery').IssuuGallery({user:'hotmedia',size: 'medium',dateFormat:'d/m/y',textOn:'publicado em ',loading:'Carregando publicações...',proxyPath:'js/issuuGallery/',showDate: false});
+			});
+		</script> 
+	</head> 
+	<body>
+		<h1>JQuery Issuu Gallery Plugin</h1>
+		<div id="gallery">
+		
+		</div>
+	</body> 
+</html>
