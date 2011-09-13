@@ -1,0 +1,41 @@
+
+********************************************************************
+			JQUERY ISSUU GALLERY PLUGIN
+********************************************************************
+Author: Marcos Timm Rossow
+Web: http://marcos.blog.br/dev
+
+=========================================
+	DEMO: http://marcos.blog.br/issuu-gallery
+=========================================
+
+
+INSTALL:
+
+Just add the JS Plugin file and CSS:
+
+<script type="text/javascript" src="js/issuuGallery/jquery.issuu.gallery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="js/issuuGallery/css/style.css" />
+
+USE:
+
+JS:
+$(function() {
+	$('#gallery').IssuuGallery({user:'your_issuu_user_name'});
+});
+
+HTML:
+<div id="gallery"></div>
+
+
+Options accepted:
+
+	user: '',
+	size: 'small', // can be small, medium or large
+	showDate: true, // display the publication date
+	showTitle: true, // display the title of publication
+	textOn: 'published in ', // text before publication date
+	dateFormat: 'm/d/y', // can be: m/d/y or d/m/y
+	colorBox: true, // If you want to use Colorbox (http://colorpowered.com/colorbox/) to show the publication. IF NOT, set False to link to issuu page
+	loading: 'Loading publications...', // Loading Text
+	proxyPath: '/issuuGallery/' // Path for the proxy file (proxy.php). This file is in the pack.
